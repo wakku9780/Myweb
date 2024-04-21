@@ -1,0 +1,12 @@
+﻿<!-- Views/Posts/Index.cshtml -->
+@model IEnumerable<Myweb.Models.Post>
+
+<h1>Blog Posts</h1>
+<ul>
+    @foreach (var post in Model)
+    {
+        <li>
+            <a asp-action="Details" asp-route-id="@post.PostId">@post.Title</a>
+        </li>
+    }
+</ul>

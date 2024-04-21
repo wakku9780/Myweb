@@ -1,0 +1,28 @@
+﻿@model Myweb.ViewModels.PostViewModel
+
+<h2>Create Post</h2>
+
+<form asp-action="Create" method="post">
+    <div class="container py-5">
+        <div class="mb-3">
+            <label class="form-label">Id</label>
+            <input type="text" class="form-control" id="Id" asp-for="Id" />
+
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Title</label>
+            <input type="text" class="form-control" id="Title" asp-for="Title" />
+
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Content</label>
+            <textarea class="form-control" id="Content" asp-for="Content"></textarea>
+
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-dark">Create Post</button>
+        </div>
+    </div>
+</form>
